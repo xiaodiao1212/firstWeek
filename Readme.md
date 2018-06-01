@@ -18,7 +18,7 @@
 * [event 对象](#event 对象)
 * [事件中的 this](#事件中的 this)
 * [组件状态](#组件状态)
-* [setState 接受对象参数](#setState 接受对象参数)
+* [setState接受对象参数](#setState接受对象参数)
 * [setState 接受函数参数](#setState 接受函数参数)
 * [配置props](#配置props)
 * [props 不可变](#props 不可变)
