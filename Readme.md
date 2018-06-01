@@ -9,4 +9,4 @@
 
 这周free 涵盖两个点
 
-[用react 模拟构造渲染逻辑原理及使用](./react-first-step/react.md)
+[用react模拟构造渲染逻辑原理及使用](./react.md)
