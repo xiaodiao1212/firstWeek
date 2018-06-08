@@ -4,7 +4,7 @@
     * [预习](#预习)
     * [浏览器渲染](#浏览器渲染)
     * [背景](#背景)
-    * [dom对象和原生js对象](dom对象和原生js对象)
+    * [dom对象和原生js对象](#dom对象和原生js对象)
     * [diff算法](#diff算法)
 
 
@@ -243,6 +243,7 @@ function enqueueRemove(parentInst, fromIndex) {
 * 从新集合中取得 A，判断老集合中存在相同节点 A，由于 A 在老集合中的位置`A._mountIndex = 0`，`lastIndex = 2`，此时 `A._mountIndex < lastIndex`，因此对 A 进行移动操作；更新 `lastIndex ＝ 2`，并将 A 的位置更新为新集合中的位置，`nextIndex++` 进入下一个节点的判断。
 
 * 当完成新集合中所有节点 `diff` 时，最后还需要对老集合进行循环遍历，判断是否存在新集合中没有但老集合中仍存在的节点，发现存在这样的节点 D，因此删除节点 D，到此 `diff` 全部完成。
+[源码地址](https://github.com/facebook/react/blob/83cbc3e5fb700f45c48214c3785d8b44ab5ebdce/src/renderers/shared/stack/reconciler/ReactMultiChild.js)
 
 ```
 _updateChildren: function(nextNestedChildrenElements, transaction, context) {
